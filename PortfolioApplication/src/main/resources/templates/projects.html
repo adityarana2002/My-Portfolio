@@ -18,12 +18,15 @@
                         <div class="card-body p-0">
                             <div class="d-flex align-items-center">
                                 <div class="p-5">
-                                    <h2 class="fw-bolder">Project Name 1</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum
-                                        aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad
-                                        asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    <h2 class="fw-bolder">E-Commerce Web Application</h2>
+                                    <p>Designed and developed a secure and scalable e-commerce platform using Spring
+                                        Boot, MySQL, Thymeleaf, and Spring Security. Implemented robust authentication,
+                                        authorization, and seamless payment integration. Enabled dynamic product
+                                        management with an intuitive admin panel. Delivered a responsive user experience
+                                        with efficient database management using JPA and Hibernate.</p>
                                 </div>
-                                <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..."/>
+                                <img class="img-fluid" src="assests/images/e-commerce.jpeg"
+                                     style="width: 300px; height: 400px; object-fit: cover;" alt="..."/>
                             </div>
                         </div>
                     </div>
@@ -32,12 +35,15 @@
                         <div class="card-body p-0">
                             <div class="d-flex align-items-center">
                                 <div class="p-5">
-                                    <h2 class="fw-bolder">Project Name 2</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum
-                                        aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad
-                                        asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    <h2 class="fw-bolder">Weather Application</h2>
+                                    <p>Developed a real-time weather application using Spring Boot and REST APIs for
+                                        accurate weather forecasting. Integrated dynamic location-based data retrieval
+                                        with a clean and responsive UI using Thymeleaf. Ensured seamless user experience
+                                        with efficient API handling and error management. Applied Spring Security for
+                                        secure access and data protection.</p>
                                 </div>
-                                <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..."/>
+                                <img class="img-fluid" src="assests/images/weather-images.jpeg"
+                                     style="width: 300px; height: 400px; object-fit: cover;" alt="..."/>
                             </div>
                         </div>
                     </div>
@@ -50,7 +56,7 @@
         <div class="container px-5 my-5">
             <div class="text-center">
                 <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
+                <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" th:href="@{/contact}">Contact me</a>
             </div>
         </div>
     </section>
