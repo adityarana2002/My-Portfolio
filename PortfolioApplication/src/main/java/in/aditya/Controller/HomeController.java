@@ -15,32 +15,35 @@ public class HomeController {
     @Autowired
     private ContactService contactService;
 
-    @GetMapping({"/","","/home"})
-    public String showHomePage(Model model){
+    @GetMapping({"/", "", "/home"})
+    public String showHomePage(Model model) {
         model.addAttribute("title", "home");
         return "master";
     }
 
     @GetMapping("/projects")
-    public String showProjectsPage(Model model){
-        model.addAttribute("title","projects");
+    public String showProjectsPage(Model model) {
+        model.addAttribute("title", "projects");
         return "master";
     }
+
     @GetMapping("/resume")
-    public String showResumePage(Model model){
-        model.addAttribute("title","resume");
+    public String showResumePage(Model model) {
+        model.addAttribute("title", "resume");
         return "master";
     }
+
     @GetMapping("/contact")
-    public String showContactPage(Model model){
-        model.addAttribute("title","contact");
+    public String showContactPage(Model model) {
+        model.addAttribute("title", "contact");
         model.addAttribute("contact", new Contact());
         return "master";
     }
 
-@PostMapping("/contact")
-    public String submitContactForm(@ModelAttribute Contact contact){
+    @PostMapping("/contact")
+    public String submitContactForm(@ModelAttribute Contact contact) {
         contactService.saveContact(contact);
         return "redirect:/contact?success=true";
     }
+
 }
