@@ -15,6 +15,8 @@ public class Contact {
     private String fullName;
     private String email;
     private String phone;
+    @Lob
+    @Column(name="message",columnDefinition = "Text")
     private String message;
 
     @Override
